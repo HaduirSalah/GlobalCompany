@@ -1,0 +1,53 @@
+<nav #navbar class="navbar shadow-sm navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/" style="color: #0c3fb4; font-size: 30px; font-weight: 600">
+            <img src="favicon.ico" width="50" height="50" alt="Global Company" />
+            Global Company
+        </a>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavI">
+            <ul class="navbar-nav me-2 mt-2 mt-lg-0 ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link home" routerLinkActive="active-link" routerLink="/home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link values" routerLinkActive="active-link" routerLink="/values">Values</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link about-us" routerLinkActive="active-link" routerLink="/about">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link services" routerLinkActive="active-link" routerLink="/services">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link clients" routerLinkActive="active-link" routerLink="/clients">clients</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link contact-us" routerLinkActive="active-link" routerLink="/contact">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link download-company-profile" routerLinkActive="active-link"
+                        routerLink="/download">Download Company Profile</a>
+                </li>
+            </ul>
+
+            <div class="dropdown">
+                <button style="color:#ffffff; background-color: #0c3fb4;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="langBtn">
+                    {{ selectedLanguage }}
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void(0)" (click)="changeLanguage('English')">English</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)" (click)="changeLanguage('Arabic')">Arabic</a></li>
+                </ul>
+            </div>
+            
+              
+        </div>
+    </div>
+</nav>

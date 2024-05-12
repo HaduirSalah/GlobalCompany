@@ -1,0 +1,27 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.nav-item,
+.dropdown {
+    // On click
+    // Scroll to: "We are";
+    //Animate: Animate;
+    // animation-timing-function: ease-out;
+    // animation-duration: 460ms;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "open sans";
+}
+
+.home {
+    font-weight: 700;
+    color: #0c3fb4;
+    text-decoration: underline #a4b7e3;
+}
+
+.nav-link:hover {
+    color: #0c3fb4;
+    text-decoration: underline #a4b7e3;
+}

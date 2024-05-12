@@ -1,0 +1,57 @@
+.card1,
+.card2 {
+    width: 578px;
+    padding: 20px 16px 20px 16px;
+    gap: 25px;
+    border-radius: 30px;
+    opacity: 0px;
+    background-color: #ffffff;
+    box-shadow: 4px 10px 30px 0px #0000000f;
+    margin: 20px 0;
+    max-width: 100%;
+
+}
+
+
+.card1{
+    height:112px;
+}
+
+.card2{
+    height:138px;
+}
+.typographyH {
+    font-size: 19.4px;
+    font-weight: 600;
+    color: #0C3FB4;
+}
+
+
+.typographyP {
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .card1,
+    .card2 {
+      flex-direction: column; /* Stack the image and typography vertically on smaller screens */
+      height: auto; /* Allow the card to grow vertically based on its content */
+      min-height: auto; /* Remove the minimum height restriction on smaller screens */
+    }
+
+    .Images{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 900px) {
+    
+    .Images{
+        flex-wrap: wrap;
+    }
+}
